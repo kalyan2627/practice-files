@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        .container{ 
+            width: 1200px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        header .header-main {
+         background-color: #004b8d;
+         padding-top: 10px;
+        padding-bottom: 10px;
+        }
+
+        .header-main .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img{
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
+        .header-main .container .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .header-main .container .welcome{
+            color: white;
+            font-size: 22px;
+            text-transform: uppercase;
+        }
+        
+         .header-main .container .about-us {
+            display: flex;
+            color: white;
+        }
+        
+        .header-main .container .about-us a{ 
+            color: white;
+            background: red;
+            padding: 10px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 14px;
+        }
+
+        main {
+            width: 1200px;
+            max-width: 95%;
+            margin: auto;
+            padding: 0;
+            text-align: justify;  
+          
+        }
+
+        main h1{
+        font-size: 26px;
+        color: #0b4c8a;
+        margin: 0;
+        padding: 0;
+        }
+
+
+        .images {
+        width: 1200px;
+        max-width: 95%;
+        margin:  auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        }
+
+
+        .images img {
+        width: 100%;
+        height: auto;
+        display: block;
+        }
+
+        
+        .footer {
+        background: #0f4f87;
+        color: white;
+        padding: 20px 0 10px;
+        margin-top: 30px;
+        }
+
+        .about {
+        text-align: center;
+        }
+
+        .footer-container {
+        width: 1200px;
+        max-width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding-top: 20px;
+        }
+
+        .footer-col {
+        text-align: left;
+        }
+
+        .footer-col ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-col li {
+        margin-bottom: 8px;
+        }
+
+        .footer-col a {
+        color: #cfe6ff;
+        text-decoration: none;
+        font-size: 14px;
+        }
+
+        .footer h6 {
+        text-align: center;
+        margin: 10px 0 0;
+        }
+
+        @media (max-width: 900px) {
+        .card-grid {
+            grid-template-columns: 1fr;
+        }
+        .footer-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .welcome { display: none; }
+        }
+
+        @media (max-width: 600px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+        }
+
+
+
+    </style>
+
+</head>
+
+<body>
+    
+    <header>
+        
+        <div class="header-main">
+
+            <div class="container">
+                
+                <div class="logo">
+                    <img src="images/logo.png" alt="Financial Bank">
+                    <span>Financial Bank</span>
+                </div>
+                
+                <div class="welcome">
+                    <span>Welcome to Financial Bank</span>
+                </div>
+                
+                <nav class="about-us">
+                    <a href="aboutus.html">About us</a>
+                    <a href="index.html">Home</a>
+                </nav>
+                
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="body" style="margin-top: 50px; margin-bottom: 50px;">
+
+            <div class="body-text" style="padding: 10px; background-color: #cfe6ff; border-radius: 20px;" >
+
+                <h1>
+                    About Us
+                </h1>
+                
+                <p>
+                    We are a customer-focused banking and financial services organization 
+                    committed to delivering secure, transparent, and innovative financial solutions. 
+                    Our mission is to empower individuals, families, and businesses to achieve 
+                    their financial goals through reliable banking products, modern technology, 
+                    and personalized service.With a strong foundation built on trust and integrity, we offer a wide range 
+                    of services including savings and current accounts, loans, digital banking, 
+                    investment support, and financial advisory solutions. We continuously adopt 
+                    advanced technology to provide fast, convenient, and safe banking experiences 
+                    across online and offline channels.
+                </p>
+                
+                <p>
+                    Our team of experienced professionals works with dedication to understand customer 
+                    needs and provide tailored financial solutions. We believe in long-term relationships, 
+                    ethical practices, and responsible banking that supports community growth and economic 
+                    development.    Driven by innovation and guided by values, we strive to be a dependable 
+                    financial partner for every stage of our customers’ journey.
+                </p>
+                
+            </div>
+
+        </div>
+            
+    </main>
+
+    <div class="images">
+
+        <img src="images/img 1.png" alt="error">
+        <img src="images/img 2.png" alt="error">
+        <img src="images/img 3.png" alt="error">
+        <img src="images/img 5.png" alt="error">
+
+    </div>
+
+<footer class="footer">
+
+    <div class="about" style="text-align: center;margin-top: 0;" >
+        <h2 style="margin: 0;">Financial Bank or its representatives NEVER ask for any payments to process loans.</h2>
+        <hr>
+    </div>
+    
+  <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h3>Consumer loans</h3>
+
+            <ul>
+               <li><a href="products.html">Personal Loans</a></li>
+               <li><a href="products.html">consumer Durable Loan</a></li>
+               <li><a href="products.html">Digital Products Loan</a></li>
+               <li><a href="products.html">Auto Loan</a></li>
+               <li><a href="products.html">Two Wheeler Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enterprise Loans</h3>
+
+            <ul>
+               <li><a href="products.html">Unsecured Business Loan</a></li>
+               <li><a href="products.html">Loan Against Property</a></li>
+               <li><a href="products.html">Enterprise Business Loan</a></li>
+               <li><a href="products.html">Personal Loan for Proprietors</a></li>
+               <li><a href="products.html">Gold Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Third Party Products</h3>
+
+            <ul>
+               <li><a href="blogs.html">Life Insurance</a></li>
+               <li><a href="blogs.html">General Insurance</a></li>
+               <li><a href="blogs.html">Accidental Insurance</a></li>
+               <li><a href="blogs.html">Term life Insurance</a></li>
+               <li><a href="blogs.html">Financial Bank Insurance</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Connect With Us</h3>
+        
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://www.instagram.com/">Instagram</a></li>
+               <li><a href="https://x.com/">Twitter</a></li>
+               <li><a href="https://www.youtube.com/">Youtube</a></li>
+               <li><a href="https://in.linkedin.com/">Linkedin</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+            <hr>
+            <h6 style="text-align: center; margin: 0;">©Financial Bank Ltd. All rights reserved</h6>
+</footer>
+
+</body>
+
+</html>

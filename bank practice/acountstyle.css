@@ -1,0 +1,21 @@
+section.coming-soon {
+    width: 1200px;
+    max-width: 90%;
+    height: 390px;
+    margin: 50px auto;
+    border-radius: 30px;
+    position: relative;     
+    overflow: hidden;       
+}
+
+section.coming-soon .comingsoon-banner {
+    width: 100%;
+    height: 100%;
+}
+
+section.coming-soon .comingsoon-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    display: block;
+}

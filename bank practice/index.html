@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Bank</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="header-main">
+        <div class="header-container">
+
+            <div class="logo">
+                <img src="images/logo.png" alt="Bank Logo">
+                <span>FINANCIAL BANK</span>
+            </div>
+
+            <nav class="header-buttons">
+                <ul>
+                    <li><a href="myaccount.html">My Account</a></li>
+                    <li><a href="approved.html">Pre Approved Loan</a></li>
+                    <li><a href="payment.html">Make Payment</a></li>
+                    <li><a href="location.html">Branch Location</a></li>
+                    <li id="loginBtn"><a href="#">Login</a></li>
+                    <li id="registerBtn"><a href="#">Register</a></li>
+                    <li id="logoutBtn" style="display:none;"><a href="#">Logout</a></li>
+                </ul>
+
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="menu-bar">
+        <div class="menu-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="blogs.html">Blogs</a></li>
+                    <li><a href="customer.html">Customer Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="bottom-bar">
+       <marquee>WELCOME TO FINANCIAL BANK – CELEBRATING 100 YEARS OF TRUST</marquee>
+        
+    </div>
+
+</header>
+
+<section id="dashboard" style="display:none; padding:20px;">
+
+    <h2 id="dashWelcome"></h2>
+
+    <div style="margin-top:15px;">
+        <h3 id="dashCustomer"></h3>
+        <h3 id="dashBalance"></h3>
+        <h3 id="dashLoan"></h3>
+        <h3 id="dashStatus"></h3>
+    </div>
+
+</section>
+
+
+<h3 id="customer"></h3>
+<h2 id="welcome"></h2>
+<h3 id="loan"></h3>
+<h3 id="status"></h3>
+<h3 id="balance"></h3>
+
+
+
+
+
+<div class="highlights container">
+    <h2>Highlights</h2>
+</div>
+
+<section class="auto-slider">
+  <div class="slider-container">
+
+    <div class="slide">
+      <img src="images/img 1.png" alt="Bank offer banner 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/img 2.png" alt="Bank offer banner 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/img 3.png" alt="Bank offer banner 3">
+    </div>
+
+  </div>
+</section>
+
+<section class="products-section">
+
+    <div class="products-container">
+
+        <h2>EXPLORE OUR PRODUCTS</h2>
+
+        <div class="products-grid">
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <h3>Personal Loan</h3>
+                </div>
+                <p>Apply for collateral-free Personal Loans Online!</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <h3>Business Loan</h3>
+                </div>
+                <p>Affordable Business Loans</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <span class="product-icon"></span>
+                    <h3>Gold Loan</h3>
+                </div>
+                <p>Easy Gold Loans</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <span class="product-icon"></span>
+                    <h3>Commercial Vehicle Loan</h3>
+                </div>
+                <p>Boost your transport business</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <span class="product-icon"></span>
+                    <h3>Salaried Personal Loan</h3>
+                </div>
+                <p>Personal Loans at attractive interest rates for Salaried Individuals</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <span class="product-icon"></span>
+                    <h3>Loan Against Property</h3>
+                </div>
+                <p>Loan against property for your personal & business needs</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <span class="product-icon"></span>
+                    <h3>Two Wheeler Loan</h3>
+                </div>
+                <p>Own your dream bike with our two wheeler loan!</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+
+            <div class="product-card product-card">
+                <div class="product-head">
+                    <span class="product-icon"></span>
+                    <h3>Construction Equipment Loan</h3>
+                </div>
+                <p>Construction Equipment Loan with 100% financing on asset cost</p>
+                <div class="product-actions">
+                    <a href="products.html">Know More</a>
+                    <a href="regestration.html" class="product-apply">Apply Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="banner">
+  <div class="banner-container">
+    <div class="banking-banner">
+      <img src="images/img 5.png" alt="Bank services banner">
+    </div>
+  </div>
+</section>
+
+<div class="highlights container">
+    <h2>customer services</h2>
+</div>
+
+<section class="services-section">
+
+    <div class="services-container">
+
+        <div class="services-grid">
+
+            <div class="services-card">
+                <h3>E-MANDATE REGISTRATION</h3>
+                <a href="regestration.html">CLICK HERE</a>
+            </div>
+
+            <div class="services-card">
+                <h3>CHECK LOAN STATUS</h3>
+                <a href="regestration.html">CHECK NOW</a>
+            </div>
+
+            <div class="services-card">
+                <h3>MISSED CALL SERVICE</h3>
+                <a href="regestration.html">CALL NOW</a>
+            </div>
+
+            <div class="services-card">
+                <h3>FIND NEAREST BRANCH</h3>
+                <a href="regestration.html">LOCATE NOW</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="highlights container">
+    <h2>IMPORTANT INFORMATION</h2>
+</div>
+
+<section class="info-section">
+
+    <div class="info-container">
+
+        <div class="card-grid">
+
+            <div class="info-card">
+
+                <h3>Security Alert</h3>
+                <p>
+                    Protect yourself from new financial fraud. Never entertain unsolicited
+                    phone calls, especially when the caller asks for a fund transfer.
+                </p>
+                <a href="blogs.html">Know More</a>
+            </div>
+
+            <div class="info-card">
+
+                <h3>NPA Classification Norms</h3>
+                <p>
+                    RBI has issued a clarification on asset classification and
+                    provisioning norms. Click to check revised NPA norms.
+                </p>
+                <a href="blogs.html">Know More</a>
+            </div>
+
+            <div class="info-card">
+
+                <h3>Important Alert</h3>
+                <p>
+                    Financial Bank Services Ltd. or its representatives NEVER ask for any
+                    payments to process loans.
+                </p>
+                <a href="blogs.html">Know More</a>
+            </div>
+
+            <div class="info-card">
+                <h3>Floating Reference Rate</h3>
+                <p>
+                    Floating Rate of Interest, when applicable to the loan facility,
+                    shall mean the Floating Reference Rate .
+                </p>
+                <a href="blogs.html">Know More</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+
+    <div class="about" style="text-align: center;margin-top: 0;" >
+        <h2 style="margin: 0;">Financial Bank or its representatives NEVER ask for any payments to process loans.</h2>
+        <hr>
+    </div>
+    
+  <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h3>Consumer loans</h3>
+
+            <ul>
+               <li><a href="products.html">Personal Loans</a></li>
+               <li><a href="products.html">consumer Durable Loan</a></li>
+               <li><a href="products.html">Digital Products Loan</a></li>
+               <li><a href="products.html">Auto Loan</a></li>
+               <li><a href="products.html">Two Wheeler Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enterprise Loans</h3>
+
+            <ul>
+               <li><a href="products.html">Unsecured Business Loan</a></li>
+               <li><a href="products.html">Loan Against Property</a></li>
+               <li><a href="products.html">Enterprise Business Loan</a></li>
+               <li><a href="products.html">Personal Loan for Proprietors</a></li>
+               <li><a href="products.html">Gold Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Third Party Products</h3>
+
+            <ul>
+               <li><a href="blogs.html">Life Insurance</a></li>
+               <li><a href="blogs.html">General Insurance</a></li>
+               <li><a href="blogs.html">Accidental Insurance</a></li>
+               <li><a href="blogs.html">Term life Insurance</a></li>
+               <li><a href="blogs.html">Financial Bank Insurance</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Connect With Us</h3>
+        
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://www.instagram.com/">Instagram</a></li>
+               <li><a href="https://x.com/">Twitter</a></li>
+               <li><a href="https://www.youtube.com/">Youtube</a></li>
+               <li><a href="https://in.linkedin.com/">Linkedin</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+    
+            <hr>
+            <h6 style="text-align: center; margin: 0;">©Financial Bank Ltd. All rights reserved</h6>
+</footer>
+<h1 id="satya"></h1>
+<script src="script.js"></script>
+
+</body>
+</html>

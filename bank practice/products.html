@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Products</title>
+
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .container{ 
+            width: 1200px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        header .header-main {
+            background-color: #004b8d;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+        .header-main .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .logo img{
+            height: 40px;
+        }
+
+        .welcome{
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .products{
+            display: flex;
+            gap: 10px;
+        }
+
+        .products a{ 
+            color: white;
+            background: red;
+            padding: 8px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        section.loan {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .loans-grid {
+            display: flex;
+            gap: 20px;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            align-items: stretch;
+            transition: 0.3s;
+        }
+
+        .loans-grid:hover{
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .loans-grid img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .loan-text {
+            flex: 1;
+        }
+
+        .loan-text p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+
+        .footer {
+            background: #0f4f87;
+            color: white;
+            padding: 20px 0 10px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .footer-container {
+            width: 1200px;
+            max-width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding-top: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #cfe6ff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer h6 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 992px) {
+
+            section.loan {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .welcome {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .header-main .container{
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .products{
+                justify-content: center;
+            }
+
+            .loans-grid{
+                flex-direction: column;
+            }
+
+            .loans-grid img{
+                width: 100%;
+                height: 200px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header-main">
+
+                <div class="container">
+                    
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo">
+                        <span>Financial Bank</span>
+                    </div>
+                    
+                    <div class="welcome">
+                        welcome to financial bank - 100 years of trust
+                    </div>
+                    
+                    <nav class="products">
+                        <a href="products.html">Products</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="loan">
+
+            <div class="loans-grid">
+
+                <img src="images/1.png" alt="Personal Loan">
+                
+                <div class="loan-text">
+
+                    <p>
+                        Our Personal Loan service is designed to help you meet your financial needs 
+                        quickly and conveniently. Whether you are planning a major purchase, managing 
+                        unexpected expenses, or consolidating existing obligations, we offer flexible 
+                        loan options with simple eligibility criteria and fast processing. Enjoy 
+                        competitive interest rates, transparent terms, and easy repayment plans tailored 
+                        to your comfort. Apply online with minimal documentation and get quick approval 
+                        to access funds when you need them most.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="loans-grid">
+
+                <img src="images/3.png" alt="Business Loan">
+
+                <div class="loan-text">
+                    <p>
+                        Our Business Loan solutions are crafted to support entrepreneurs and growing enterprises 
+                        with timely and flexible funding. Whether you need capital for expansion, equipment purchase, 
+                        working capital, or cash-flow management, we offer customized loan options with competitive 
+                        interest rates and simple documentation. With fast approvals, transparent terms, and structured 
+                        repayment plans, we help your business move forward without financial stress. Apply easily 
+                        and get the financial backing your business deserves.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="loans-grid">
+
+                <img src="images/4.png" alt="Gold Loan">
+
+                <div class="loan-text">
+                    <p>
+                        Our Gold Loan service provides a quick and secure way to access funds by pledging your 
+                        gold ornaments. Get instant liquidity with minimal documentation, attractive interest rates, 
+                        and fast approval. Your gold is stored safely with complete transparency and insurance coverage. 
+                        Enjoy flexible repayment options and the freedom to repay at your convenience. Whether for 
+                        personal or business needs, our gold loan helps you unlock the true value of your assets with ease.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="loans-grid">
+
+                <img src="images/2.png" alt="Home Loan">
+
+                <div class="loan-text">
+                    <p>
+                        Our Home Loan service helps you turn your dream of owning a home into reality with convenient and 
+                        affordable financing options. We offer competitive interest rates, higher loan eligibility, and flexible 
+                        repayment tenures to match your financial goals. With simple documentation, quick processing, and transparent terms, 
+                        the application process is smooth and hassle-free. Whether you are buying, building, or renovating a house, our 
+                        home loan provides the support you need every step of the way.
+                    </p> 
+
+                </div>
+
+            </div>
+
+        </section>
+
+       <footer class="footer">
+
+    <div class="about" style="text-align: center;margin-top: 0;" >
+        <h2 style="margin: 0;">Financial Bank or its representatives NEVER ask for any payments to process loans.</h2>
+        <hr>
+    </div>
+    
+  <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h3>Consumer loans</h3>
+
+            <ul>
+               <li><a href="products.html">Personal Loans</a></li>
+               <li><a href="products.html">consumer Durable Loan</a></li>
+               <li><a href="products.html">Digital Products Loan</a></li>
+               <li><a href="products.html">Auto Loan</a></li>
+               <li><a href="products.html">Two Wheeler Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enterprise Loans</h3>
+
+            <ul>
+               <li><a href="products.html">Unsecured Business Loan</a></li>
+               <li><a href="products.html">Loan Against Property</a></li>
+               <li><a href="products.html">Enterprise Business Loan</a></li>
+               <li><a href="products.html">Personal Loan for Proprietors</a></li>
+               <li><a href="products.html">Gold Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Third Party Products</h3>
+
+            <ul>
+               <li><a href="blogs.html">Life Insurance</a></li>
+               <li><a href="blogs.html">General Insurance</a></li>
+               <li><a href="blogs.html">Accidental Insurance</a></li>
+               <li><a href="blogs.html">Term life Insurance</a></li>
+               <li><a href="blogs.html">Financial Bank Insurance</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Connect With Us</h3>
+        
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://www.instagram.com/">Instagram</a></li>
+               <li><a href="https://x.com/">Twitter</a></li>
+               <li><a href="https://www.youtube.com/">Youtube</a></li>
+               <li><a href="https://in.linkedin.com/">Linkedin</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+            <hr>
+            <h6 style="text-align: center; margin: 0;">©Financial Bank Ltd. All rights reserved</h6>
+</footer>
+
+    </body>
+
+</html>

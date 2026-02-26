@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pre Approved Loan</title>
+
+        <style>
+
+        html, body {
+        height: 100%;
+        }
+
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        padding-top: 120px;
+        }
+
+        main {
+        flex: 1;
+        }
+
+        .container {
+        width: 1200px;
+        max-width: 95%;
+        margin: auto;
+        }
+
+        header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        }
+
+        .header-account {
+        background: #004b8d;
+        padding: 10px 0;
+        }
+
+        .header-account .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        }
+
+        .logo img {
+        height: 42px;
+        }
+
+        .welcome span {
+        color: white;
+        font-size: 22px;
+        text-transform: uppercase;
+        }
+
+        .approved a {
+        color: white;
+        background: red;
+        padding: 10px 16px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 14px;
+        }
+
+        .loan-section {
+        padding: 50px 0 80px;
+        }
+
+        .loan-card {
+        background: #ffffff;
+        max-width: 900px;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: center;
+        margin: auto;
+        }
+
+        .loan-card h1 {
+        color: #2c7be5;
+        margin-top: 0;
+        }
+
+        .amount {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 15px 0;
+        }
+
+        .details {
+        color: #555;
+        font-size: 15px;
+        }
+
+        .loan-card button {
+        background: #2c7be5;
+        color: #fff;
+        border: none;
+        padding: 12px 22px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 15px;
+        }
+
+        .loan-card button:hover {
+        background: #1a5dc9;
+        }
+
+        .footer {
+        background: #0f4f87;
+        color: white;
+        padding: 20px 0 10px;
+        }
+
+        .about {
+        text-align: center;
+        }
+
+        .footer-container {
+        width: 1200px;
+        max-width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding-top: 20px;
+        }
+
+        .footer-col {
+        text-align: left;
+        }
+
+        .footer-col ul {
+        list-style: none;
+        padding: 0;
+        }
+
+        .footer-col li {
+        margin-bottom: 8px;
+        }
+
+        .footer-col a {
+        color: #cfe6ff;
+        text-decoration: none;
+        font-size: 14px;
+        }
+
+        .footer h6 {
+        text-align: center;
+        margin: 10px 0 0;
+        }
+
+        @media (max-width: 900px) {
+        .footer-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .welcome { display: none; }
+        }
+
+        @media (max-width: 600px) {
+        .footer-container {
+            grid-template-columns: 1fr;
+        }
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header-account">
+
+                <div class="container">
+
+                    <div class="logo">
+                        <img src="images/logo.png">
+                        <span>FINANCIAL BANK</span>
+                    </div>
+
+                    <div class="welcome">
+                        <span>Welcome to Financial Bank</span>
+                    </div>
+
+                    <nav class="approved">
+                        <a href="approved.html">Pre Approved Loan</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <section class="loan-section">
+
+                <div class="container">
+
+                    <div class="loan-card">
+                        <h1>Pre-Approved Loan</h1>
+                        <p class="details">You are eligible for a loan of up to</p>
+                        <div class="amount">₹5,00,000</div>
+                        <p class="details">Interest rate starting from 10.5% p.a.</p>
+                        <button>Apply Now</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+      
+<footer class="footer">
+
+    <div class="about" style="text-align: center;margin-top: 0;" >
+        <h2 style="margin: 0;">Financial Bank or its representatives NEVER ask for any payments to process loans.</h2>
+        <hr>
+    </div>
+    
+  <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h3>Consumer loans</h3>
+
+            <ul>
+               <li><a href="products.html">Personal Loans</a></li>
+               <li><a href="products.html">consumer Durable Loan</a></li>
+               <li><a href="products.html">Digital Products Loan</a></li>
+               <li><a href="products.html">Auto Loan</a></li>
+               <li><a href="products.html">Two Wheeler Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enterprise Loans</h3>
+
+            <ul>
+               <li><a href="products.html">Unsecured Business Loan</a></li>
+               <li><a href="products.html">Loan Against Property</a></li>
+               <li><a href="products.html">Enterprise Business Loan</a></li>
+               <li><a href="products.html">Personal Loan for Proprietors</a></li>
+               <li><a href="products.html">Gold Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Third Party Products</h3>
+
+            <ul>
+               <li><a href="blogs.html">Life Insurance</a></li>
+               <li><a href="blogs.html">General Insurance</a></li>
+               <li><a href="blogs.html">Accidental Insurance</a></li>
+               <li><a href="blogs.html">Term life Insurance</a></li>
+               <li><a href="blogs.html">Financial Bank Insurance</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Connect With Us</h3>
+        
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://www.instagram.com/">Instagram</a></li>
+               <li><a href="https://x.com/">Twitter</a></li>
+               <li><a href="https://www.youtube.com/">Youtube</a></li>
+               <li><a href="https://in.linkedin.com/">Linkedin</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+            <hr>
+            <h6 style="text-align: center; margin: 0;">©Financial Bank Ltd. All rights reserved</h6>
+</footer>
+    
+    </body>
+</html>

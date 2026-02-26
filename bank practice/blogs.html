@@ -1,0 +1,392 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogs</title>
+
+        <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, sans-serif;
+        }
+
+        .container{ 
+            width: 1200px;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        header .header-main {
+            background-color: #004b8d;
+            padding: 10px 0;
+            margin-bottom: 30px;
+        }
+
+        .header-main .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .logo img{
+            height: 40px;
+        }
+
+        .welcome{
+            color: white;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        .products{
+            display: flex;
+            gap: 10px;
+        }
+
+        .products a{ 
+            color: white;
+            background: red;
+            padding: 8px 14px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        section.blog {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 15px;
+        }
+
+        .blog-grid {
+            display: flex;
+            gap: 20px;
+            background: #f5f5f5;
+            padding: 15px;
+            border-radius: 10px;
+            align-items: stretch;
+            transition: 0.3s;
+        }
+
+        .blog-grid:hover{
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        .blog-grid img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+
+        .blog-text {
+            flex: 1;
+        }
+
+        .blog-text p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+
+        .footer {
+            background: #0f4f87;
+            color: white;
+            padding: 20px 0 10px;
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .footer-container {
+            width: 1200px;
+            max-width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding-top: 20px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col a {
+            color: #cfe6ff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .footer h6 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 992px) {
+
+            section.blog {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .welcome {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .header-main .container{
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+
+            .products{
+                justify-content: center;
+            }
+
+            .blog-grid{
+                flex-direction: column;
+            }
+
+            .blog-grid img{
+                width: 100%;
+                height: 200px;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <div class="header-main">
+
+                <div class="container">
+                    
+                    <div class="logo">
+                        <img src="images/logo.png" alt="logo">
+                        <span>Financial Bank</span>
+                    </div>
+                    
+                    <div class="welcome">
+                        welcome to financial bank - 100 years of trust
+                    </div>
+                    
+                    <nav class="products">
+                        <a href="blogs.html">Blogs</a>
+                        <a href="index.html">Home</a>
+                    </nav>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="blogs">
+
+            <div class="blog-grid">
+
+                <img src="images/loan_against_29092025.webp" alt="Loan">
+                
+                <div class="blog-text">
+
+                    <p>
+                    When you need a significant amount of money for personal or business needs, finding the right 
+                    financing option can make all the difference. A **Loan Against Property (LAP)** allows you to 
+                    leverage the value of real estate you already own to secure funds at relatively lower interest 
+                    rates compared to unsecured loans. LAP can provide both the scale and flexibility you need to 
+                    either expand your business, fund higher education, consolidate (restructure) your debts, or 
+                    cover any medical expenses. How Does An LAP Loan Work? A **loan against property** is a secured 
+                    loan where you pledge residential, commercial, or industrial property as collateral. The lender 
+                    evaluates the property’s market value and offers a percentage of that value as the final loan amount. 
+                    Since the property acts as security, lenders are more willing to offer larger amounts with longer 
+                    repayment tenures and competitive **interest rates**.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="blog-grid">
+
+                <img src="images/Common_Loan_Scams_and_How_to_Stay_Safe-03_31122025.webp" alt="Loan">
+
+                <div class="blog-text">
+                    <p>
+                        In today’s fast-paced digital world, access to quick loans has become easier than ever. 
+                        With just a few clicks, you can apply for personal loans, business loans, or credit through 
+                        trusted financial institutions. However, this convenience also attracts fraudsters who create 
+                        fake websites, pose as lenders, and trick unsuspecting people into sharing sensitive information 
+                        or making payments. Loan scams are becoming increasingly sophisticated, preying on individuals 
+                        who need urgent funds. Understanding how these scams work and how to spot them is essential to 
+                        keeping your money and identity safe. In this guide, we’ll uncover the top 5 common loan scams 
+                        and offer practical tips to help you stay protected from the loan scams that have become all too 
+                        common online. One of the most widespread loan scams is the fake loan offer. Fraudsters pretend 
+                        to be legitimate financial companies.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="blog-grid">
+
+                <img src="images/Cybersecurity_Best_Practices_for_Safe_Digital_Banking-03_30122025.webp" alt="Loan">
+
+                <div class="blog-text">
+                    <p>
+                        Digital banking has made life easier for millions of users by enabling instant transactions, 
+                        online loan applications, and seamless account access. However, the increase in online activities 
+                        has also attracted cybercriminals who use phishing, malware, and identity theft to exploit users.
+                        Digital Banking Cybersecurity focuses on protecting your personal data, login credentials, and transactions 
+                        from such attacks. Awareness is your first line of defense. Knowing how to identify scams, recognize 
+                        suspicious links, and keep your devices secure can save you from potential losses. If you’re new to online 
+                        banking or want to upgrade your safety measures, start by visiting trusted awareness programs like HDB 
+                        Financial Services, which regularly educates customers on safe digital banking practices. One of the 
+                        simplest yet most overlooked aspects of Cybersecurity in Digital Banking is the security of your device 
+                        and internet connection. Avoid public Wi-Fi for financial transactions.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="blog-grid">
+
+                <img src="images/Loan_agains_mortgage_p_04092025.webp" alt="Loan">
+
+                <div class="blog-text">
+                    <p>
+                        If you are a land owner who is considering converting the land into capital, then you don't have to stress. 
+                        Today, many land owners are starting to realize the advantages of a 'Loan against Land.' They now see this 
+                        as a way to free up funds that would otherwise be stuck in non-performing assets or idle land. For instance, 
+                        the market for loans secured by real estate in India alone was valued at an incredible USD 758 billion in 2024 
+                        and is expected to grow at a compound annual growth rate (CAGR) of 13.5% to surpass USD 2.3 trillion by 2033. 
+                        With HDB Financial Services (HDBFS), leveraging a mortgage against land enables quick access to large-scale 
+                        funding, ideal for business expansion, personal milestones, and strategic opportunities. Benefit from minimal 
+                        documentation, flexible repayment terms, and competitive rates while keeping ownership of your valued asset.
+                        A loan against land is a secured financing option where HDBFS provides capital by mortgaging your land. 
+                        Unlike personal loans, this structure offers:
+
+
+                    </p> 
+
+                </div>
+
+            </div>
+
+        </section>
+
+       <footer class="footer">
+
+    <div class="about" style="text-align: center;margin-top: 0;" >
+        <h2 style="margin: 0;">Financial Bank or its representatives NEVER ask for any payments to process loans.</h2>
+        <hr>
+    </div>
+    
+  <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h3>Consumer loans</h3>
+
+            <ul>
+               <li><a href="products.html">Personal Loans</a></li>
+               <li><a href="products.html">consumer Durable Loan</a></li>
+               <li><a href="products.html">Digital Products Loan</a></li>
+               <li><a href="products.html">Auto Loan</a></li>
+               <li><a href="products.html">Two Wheeler Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enterprise Loans</h3>
+
+            <ul>
+               <li><a href="products.html">Unsecured Business Loan</a></li>
+               <li><a href="products.html">Loan Against Property</a></li>
+               <li><a href="products.html">Enterprise Business Loan</a></li>
+               <li><a href="products.html">Personal Loan for Proprietors</a></li>
+               <li><a href="products.html">Gold Loan</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Third Party Products</h3>
+
+            <ul>
+               <li><a href="blogs.html">Life Insurance</a></li>
+               <li><a href="blogs.html">General Insurance</a></li>
+               <li><a href="blogs.html">Accidental Insurance</a></li>
+               <li><a href="blogs.html">Term life Insurance</a></li>
+               <li><a href="blogs.html">Financial Bank Insurance</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Connect With Us</h3>
+        
+            <ul>
+               <li><a href="https://www.facebook.com/">Facebook</a></li>
+               <li><a href="https://www.instagram.com/">Instagram</a></li>
+               <li><a href="https://x.com/">Twitter</a></li>
+               <li><a href="https://www.youtube.com/">Youtube</a></li>
+               <li><a href="https://in.linkedin.com/">Linkedin</a></li>
+            </ul>
+            
+        </div>
+
+    </div>
+            <hr>
+            <h6 style="text-align: center; margin: 0;">©Financial Bank Ltd. All rights reserved</h6>
+</footer>
+
+    </body>
+
+</html>
