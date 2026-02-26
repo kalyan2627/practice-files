@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+                
+        <header>
+
+            <div class="header-container">
+
+                <a href="#home" class="logo">
+                    <img src="images/Restaurant_Logo.png" alt="">
+                    <span>Annapurna Restaurant</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section id="home">
+
+            <div class="hero">
+
+                <div class="diagonal-grid"></div>
+
+                <div class="static-decoration"></div>
+
+                <div class="bottom-right-decoration"></div>
+
+                <div class="hero-content">
+                    
+                    <h1>Welcome to Annapurna Restaurant</h1>
+
+                    <p>
+                        <span class="text-option">
+                            Experience culinary excellence in an atmosphere of refined sophistication
+                        </span>
+
+                        <span class="text-option">
+                            Discover exquisite flavors crafted with passion and precision
+                        </span>
+
+                        <span class="text-option">
+                            Where fine dining meets unforgettable moments
+                        </span>
+                    </p>
+
+                    <a href="#reservation" class="cta-btn">
+                        Reserve Your Table
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="menu">
+
+            <h2>Our Signature Menu</h2>
+
+            <div class="menu-grid">
+
+                <div class="menu-item">
+
+                    <img src="images/Hyderabadi Chicken Biryani.jpg" alt="Chicken Biryani" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Chicken Dum Biryani</h3>
+                        <p>Fragrant basmati rice cooked with tender chicken, aromatic spices, and dum style</p>
+                        <div class="price">₹200</div>
+                        <button class="ingredients-btn" onclick="showIngredients('hyderabadi-biryani')">View Ingredients</button>
+                    </div>
+
+                </div>
+                
+                <div class="menu-item">
+
+                    <img src="images/Andhra Mutton Curry.jpg" alt="Andhra Mutton Curry" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Andhra Mutton Curry</h3>
+                        <p>Spicy Andhra-style mutton curry cooked with traditional spices and rich gravy</p>
+                        <div class="price">₹240</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-mutton-curry')">View Ingredients</button>
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Andhra Veg Meals.jpg" alt="Andhra Veg Meals" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Andhra Veg Meals</h3>
+                        <p>Traditional Andhra meal with steamed rice, dal, vegetable curries, pickle, papad, and curd</p>
+                        <div class="price">₹150</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-veg-meals')">View Ingredients</button>
+                    </div>
+                    
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Andhra Fish Curry.jpg" alt="Andhra Fish Curry" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Andhra Fish Curry</h3>
+                        <p>Fresh fish cooked in spicy tangy Andhra gravy with traditional flavors</p>
+                        <div class="price">₹160</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-fish-curry')">View Ingredients</button>               
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Paneer Butter Masala.jpg" alt="Paneer Butter Masala" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Soft paneer cubes in creamy tomato butter gravy with rich Indian spices</p>
+                        <div class="price">₹150</div>
+                        <button class="ingredients-btn" onclick="showIngredients('paneer-butter-masala')">View Ingredients</button> 
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Andhra Non-Veg Meals.jpg" alt="Andhra Non-Veg Meals" class="menu-item-image">
+                    <div class="menu-item-content">
+                        <h3>Andhra Non-Veg Meals</h3>
+                        <p>Traditional full meal with rice, chicken curry, dal, fry, pickle, and curd</p>
+                        <div class="price">₹320</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-nonveg-meals')">View Ingredients</button>
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Andhra Chicken Fry.jpg" alt="Andhra Chicken Fry" class="menu-item-image">
+
+                    <div class="menu-item-content">
+                        <h3>Andhra Chicken Fry</h3>
+                        <p>Spicy dry chicken fry cooked with curry leaves, green chillies, and traditional Andhra spices</p>
+                        <div class="price">₹180</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-chicken-fry')">
+                            View Ingredients
+                        </button>
+                    </div>
+
+                </div>
+                
+                <div class="menu-item">
+
+                    <img src="images/Gongura Chicken.jpg" alt="Gongura Chicken" class="menu-item-image">
+
+                    <div class="menu-item-content">
+                        <h3>Gongura Chicken</h3>
+                        <p>Authentic Andhra chicken cooked with tangy gongura leaves and aromatic spices</p>
+                        <div class="price">₹220</div>
+                        <button class="ingredients-btn" onclick="showIngredients('gongura-chicken')">
+                            View Ingredients
+                        </button>
+                    </div>
+                
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Andhra Prawn Curry.jpg" alt="Andhra Prawn Curry" class="menu-item-image">
+
+                    <div class="menu-item-content">
+                        <h3>Andhra Prawn Curry</h3>
+                        <p>Fresh prawns cooked in spicy Andhra gravy with tamarind and curry leaves</p>
+                        <div class="price">₹260</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-prawn-curry')">
+                            View Ingredients
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Vegetable Dum Biryani.jpg" alt="Veg Biryani" class="menu-item-image">
+
+                    <div class="menu-item-content">
+                        <h3>Vegetable Dum Biryani</h3>
+                        <p>Fragrant basmati rice cooked with fresh vegetables and aromatic spices</p>
+                        <div class="price">₹140</div>
+                        <button class="ingredients-btn" onclick="showIngredients('veg-biryani')">
+                            View Ingredients
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Andhra Egg Curry.jpg" alt="Andhra Egg Curry" class="menu-item-image">
+
+                    <div class="menu-item-content">
+                        <h3>Andhra Egg Curry</h3>
+                        <p>Boiled eggs cooked in spicy Andhra gravy with onions and traditional spices</p>
+                        <div class="price">₹120</div>
+                        <button class="ingredients-btn" onclick="showIngredients('andhra-egg-curry')">
+                            View Ingredients
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="menu-item">
+
+                    <img src="images/Gongura Mutton.jpeg" alt="Gongura Mutton" class="menu-item-image">
+
+                    <div class="menu-item-content">
+                        <h3>Gongura Mutton</h3>
+                        <p>Traditional Andhra mutton curry cooked with tangy gongura leaves and rich spices</p>
+                        <div class="price">₹280</div>
+                        <button class="ingredients-btn" onclick="showIngredients('gongura-mutton')">
+                            View Ingredients
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        
+        <div id="ingredientsModal" class="modal">
+
+            <div class="modal-content">
+
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <h3 id="modalTitle"></h3>
+
+                <ul id="modalList" class="ingredient-list"></ul>
+
+            </div>
+
+        </div>
+
+        <section id="reservation">
+
+            <div class="reservation">
+
+                <div class="reservation-left">
+                    
+                    <h2>Make a Reservation</h2>
+
+                    <form class="reservation-form" onsubmit="handleReservation(event)">
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select Time</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                                <option value="20:00">8:00 PM</option>
+                                <option value="21:00">9:00 PM</option>
+                                <option value="22:00">10:00 PM</option>
+                                <option value="23:00">11:00 PM</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests" required>
+                                <option value="">Select Guests</option>
+                                <option value="1">1 Guest</option>
+                                <option value="2">2 Guests</option>
+                                <option value="3">3 Guests</option>
+                                <option value="4">4 Guests</option>
+                                <option value="5">5 Guests</option>
+                                <option value="6">6 Guests</option>
+                                <option value="7">7 Guests</option>
+                                <option value="8">8 Guests</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="special">Special Requests</label>
+                            <textarea id="special" name="special" rows="5" placeholder="Any dietary restrictions or special occasions?"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Reserve Table</button>
+
+                    </form>
+
+                </div>
+
+                <div class="reservation-right">
+                    <img src="images/restaurant-tables.jpg" alt="Restaurant Interior" class="reservation-image">
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer id="contact">
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Madhapur<br>
+                    Hyderabad, Telangana<br>
+                    Phone: (+91) 123-456-7890<br>
+                    Email: info@xxxxxxxxxx.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Thursday: 12:00 PM - 10:00 PM<br>
+                    Friday - Saturday: 12:00 PM - 11:00 PM<br>
+                    Sunday: 12:00 PM - 9:00 PM<br>
+                    Closed on major holidays</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="#">Facebook</a><br>
+                    <a href="#">Instagram</a><br>
+                    <a href="#">Twitter</a><br>
+                    <a href="#">LinkedIn</a></p>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #555; text-align: center;">
+                <p> Annapurna Restaurant.</p>
+            </div>
+
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
