@@ -108,7 +108,11 @@ header {
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
-	background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+	background:
+	url("images/Untitled\ design\ bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .diagonal-grid {
@@ -209,6 +213,13 @@ header {
 	font-size: 56px;
 	margin-bottom: 16px;
 	animation: fadeInUp 1s ease;
+	.hero h1 {
+	color: white;
+}
+
+.hero p {
+	color: #f1f1f1;
+}
 }
 
 .hero p {
